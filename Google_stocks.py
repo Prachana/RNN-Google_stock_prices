@@ -45,3 +45,9 @@ regressor.add(Dense(units = 1))
 
 #compliing the RNN
 regressor.compile()
+
+
+#Evaluate the RNN 
+import math
+from sklearn.metrics import mean_squared_error
+rmse = math.sqrt(mean_squared_error(real_stock_price, predticted_stock_price))
